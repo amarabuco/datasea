@@ -1,0 +1,44 @@
+{% extends "./base.html" %} {% block content %}
+<div class="container-fluid">
+  <div>
+    <input type="text" />
+    <span class="btn btn-success">Pesquisar</span>
+  </div>
+  <br />
+  <div class="alert alert-dark">Dados</div>
+  <div class="alert alert-primary"><em class="fas fa-ship"></em> Marítimo</div>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <em class="fas fa-cube"></em> ANTAQ - Métricas Portuárias
+      <a class="badge badge-primary" href="#">html</a> |
+      <a class="badge badge-success" href="#">csv</a>
+    </li>
+    <li class="list-group-item">
+      <em class="fas fa-cube"></em> ANTAQ - Movimentação de cargas <a class="badge badge-warning" href="api/json/mov">json</a></span>
+    </li>
+    <li class="list-group-item">
+      <em class="fas fa-cube"></em> ANTAQ - Embarcações <a class="badge badge-warning" href="api/json/ship">json</a>
+    </li>
+    <li class="list-group-item">
+      <em class="fas fa-cube"></em> Marinha - Marés <a class="badge badge-warning" href="api/json/ship">json</a>
+    </li>
+    <li class="list-group-item">
+      <em class="fas fa-key"></em> Porto sem Papel - Granel <a class="badge badge-warning" href="api/json/ship">json</a>
+    </li>
+    <li class="list-group-item">
+      <em class="fas fa-key"></em> Porto sem Papel - Estadia <a class="badge badge-warning" href="api/json/ship">json</a>
+    </li>
+  </ul>
+  <br />
+  <div class="alert alert-secondary">
+    <em class="fas fa-warehouse"></em> Armazenamento
+  </div>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a href="#">Localização de Centros de distribuição</a>
+    </li>
+    <li class="list-group-item"><a href="#">Tipos de Containeres</a></li>
+  </ul>
+</div>
+
+{% endblock %}
